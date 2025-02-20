@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Tableau with Horizontal Scroll</title>
+    <style>
+        /* Ensures the parent container allows horizontal scrolling */
+        .tableau-container {
+            width: 100%;
+            overflow-x: auto; /* Enables horizontal scroll */
+            white-space: nowrap; /* Prevents content from wrapping */
+            border: 1px solid #ccc;
+        }
+
+        /* Styles the iframe */
+        .tableau-iframe {
+            width: 1400px; /* Set a fixed width larger than small screens */
+            height: 800px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Embedded Tableau Dashboard with Horizontal Scroll</h2>
+
+    <div class="tableau-container">
+        <iframe 
+            class="tableau-iframe"
+            src="https://public.tableau.com/views/chapter3MOA-testpublishing/Coverpage?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+            scrolling="yes">
+        </iframe>
+    </div>
+
+</body>
+</html>
